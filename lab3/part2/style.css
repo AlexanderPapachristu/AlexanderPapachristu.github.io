@@ -3,4 +3,25 @@ html {
   }
   
   /* Your CSS below here */
+.box {
+    width: 200px;
+    /* height: 150px; */
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 1.125rem; /* 18px. Calculated by doing 18px/16px (16px being default browser font size) */
+    text-shadow: 1px 1px 3px black;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid darkred;
+    background: linear-gradient(
+    to bottom right,
+    rgb(255, 0, 0) 0%,
+    rgb(212, 0, 0) 30%,
+    rgb(196, 0, 0) 100%
+  );
+  box-shadow: 2px 2px 3px black, inset 0.5px 0.5px 5px white;
+  }
   
+ 
