@@ -92,4 +92,15 @@
   ul {
     list-style-type: circle;
   }
-  
+  nav ul li {
+    list-style-type: none;
+    text-align: center;
+    width: 100px;
+    border: #a66 solid 1px;
+    padding: 10px;
+    line-break: auto;
+    margin: 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+  }
