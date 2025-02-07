@@ -8,6 +8,10 @@
     margin: 0 auto;
     min-width: 1000px;
     max-width: 1400px;
+    font-size: 10px;
+    line-height: 15px;
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
   }
   
   /* Layout */
@@ -15,6 +19,7 @@
   section {
     float: left;
     width: 50%;
+    text-indent: 20px;
   }
   
   aside {
@@ -43,3 +48,34 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+
+  h1, h2 {
+    letter-spacing: 0.3em;
+  }
+  a{
+    text-decoration: none;
+    color: blue;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #a66;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgba(170, 102, 102, 0.362);
+    text-decoration: underline;
+  }
+  a:focus{
+    color: green;
+    text-decoration: none;
+    outline: none;
+  }
