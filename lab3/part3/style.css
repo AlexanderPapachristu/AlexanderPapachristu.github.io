@@ -79,3 +79,17 @@
     text-decoration: none;
     outline: none;
   }
+
+  section p a {
+    background: url(./images/external-link.png) no-repeat right;
+    padding-right: 12px;
+    background-size: 10px;
+  }
+
+  li {
+    line-height: 15px;
+  }
+  ul {
+    list-style-type: circle;
+  }
+  
