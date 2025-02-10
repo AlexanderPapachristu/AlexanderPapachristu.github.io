@@ -49,13 +49,24 @@
   
   /* WRITE YOUR CODE BELOW HERE */
 
+  @font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(./fonts/Ubuntu-Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Robotic';
+    src: url(./fonts/RobotoFlex-Regular.ttf);
+  }
+
   h1 {
+    font-family: 'Ubuntu-Bold';
     font-size: 2.5em;
     text-align: center;
   }
   
   h2 {
     font-size: 2em;
+    font-family: 'Robotic';
   }
 
   h1, h2 {
