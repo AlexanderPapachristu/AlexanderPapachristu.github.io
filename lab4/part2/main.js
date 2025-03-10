@@ -17,6 +17,12 @@ for(const image of imageArray) {
     thumbBar.appendChild(newImage);
   }
 
+// add event listener for each image in the thumbBar
+thumbBar.addEventListener('click', function(e) {
+    if(e.target.nodeName === 'IMG') {
+        displayedImage.src = e.target.src;
+    }
+    });
 const newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
 newImage.setAttribute('alt', xxx);
