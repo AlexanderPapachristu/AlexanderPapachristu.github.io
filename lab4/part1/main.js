@@ -21,12 +21,14 @@ function result() {
     let zItem = randomValueFromArray(insertZ);
     if(customName.value !== '') {
         const name = customName.value;
-
+        newStory = newStory.replace("Bob", name);
     }
 
     if(document.getElementById("uk").checked) {
-        const weight = Math.round(300);
-        const temperature =  Math.round(94);
+        const weight = Math.round(300 / 14);
+        const temperature = Math.round((94 - 32) * 5 / 9);
+        newStory = newStory.replace("94 fahrenheit", temperature + " centigrade");
+        newStory = newStory.replace("300 pounds", weight + " stone");
 
     }
     newStory = newStory.replace(":insertx:", xItem);
