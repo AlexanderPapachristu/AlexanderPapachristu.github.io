@@ -11,6 +11,11 @@ const imageArray = ['images/pic1.jpg', 'images/pic2.jpg', 'images/pic3.jpg', 'im
 const altArray = ['Closeup of a human eye', 'abstract painting', 'flowers', 'egyption drawings', 'large moth on a leaf'];
 
 /* Looping through images */
+for(const image of imageArray) {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', image);
+    thumbBar.appendChild(newImage);
+  }
 
 const newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
