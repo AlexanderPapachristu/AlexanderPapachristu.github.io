@@ -31,9 +31,9 @@ function result() {
         newStory = newStory.replace("300 pounds", weight + " stone");
 
     }
-    newStory = newStory.replace(":insertx:", xItem);
-    newStory = newStory.replace(":inserty:", yItem);
-    newStory = newStory.replace(":insertz:", zItem);
+    newStory = newStory.replaceAll(":insertx:", xItem);
+    newStory = newStory.replaceAll(":inserty:", yItem);
+    newStory = newStory.replaceAll(":insertz:", zItem);
     story.textContent = newStory;
     story.style.visibility = 'visible';
 }
