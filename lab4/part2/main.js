@@ -1,3 +1,12 @@
+/*
+* Alex Papachristu
+* 04 April 2025
+* main.js
+* This file contains the JavaScript code for the Image Gallery project.
+* The code will create a gallery of thumbnail images that can be clicked to display the full-size image.
+* The code will also create a Darken/Lighten button that will darken or lighten the image when clicked.
+*/
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
