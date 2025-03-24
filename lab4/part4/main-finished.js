@@ -1,3 +1,8 @@
+/*
+  This is the main JavaScript file for the bouncing balls project to animate the balls moving across the screen
+  and change color when they collide with each other. And add movement to the evil circle to catch the balls.
+*/
+
 // set up canvas
 
 const canvas = document.querySelector("canvas");
