@@ -1,3 +1,11 @@
+/*
+* Alex Papachristu
+* 04 April 2025
+* main.js
+* This is the main JavaScript file for the project.
+* This file is responsible for the interactive elements of the page.
+*/
+
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
