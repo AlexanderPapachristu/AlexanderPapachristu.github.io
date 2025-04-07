@@ -89,12 +89,16 @@ elements to test accessibility features.
         <font size="5">Mating rituals</font>
         <p>Bears are romantic creatures by nature, and will naturally look for a mate that they can spend the rest of their lives with. They will woo a potential suitor by making their dwelling look attractive — for example with cave paintings or a bed of reeds in the case of a wild bear, and mood lighting and a Michael Bublé CD in the case of an urban bear.</p>
         <p>The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.</p>
-        <audio controls>
+        
+        <audio id="audioSource" controls>
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
+          <track src="media/bear.vtt" kind="captions" label="English Subtitles" srclang="en" label="English">
           <p>It looks like your browser doesn't support HTML5 audio players.</p>
         </audio>
-
+        
+        <div id="captionBox">Captions will show here</div>
+        
         <aside>
 
           <font size="5">About the author</font>

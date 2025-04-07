@@ -45,3 +45,22 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
+// This isn't really an audio fact file about bears, but it is an audio file that you can transcribe
+const audio = document.getElementById('audioSource');
+          const captions = [
+            { start: 0, end: 1, text: "This isn't" },
+            { start: 1, end: 2, text: "This isn't really an" },
+            { start: 2, end: 3, text: "This isn't really an audio fact" },
+            { start: 3, end: 4, text: "This isn't really an audio fact file about" },
+            { start: 4, end: 5, text: "This isn't really an audio fact file about bears" },
+            { start: 5, end: 6, text: "This isn't really an audio fact file about bears, but it is an audio file" },
+            { start: 6, end: 7, text: "This isn't really an audio fact file about bears, but it is an audio file that you can transcribe" }
+          ];
+        
+          const captionBox = document.getElementById('captionBox');
+        
+          audio.ontimeupdate = () => {
+            const currentTime = audio.currentTime;
+            const currentCaption = captions.find(cap => currentTime >= cap.start && currentTime <= cap.end);
+            captionBox.textContent = currentCaption ? currentCaption.text : '';
+          };

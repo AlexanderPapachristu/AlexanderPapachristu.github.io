@@ -161,12 +161,12 @@ tbody tr:nth-child(odd) {
 
 /* styling content images and audio */
 
-img, audio {
+img, audio, video {
   display: block;
   margin: 0 auto;
 }
 
-audio {
+audio, video {
   width: 500px;
 }
 
