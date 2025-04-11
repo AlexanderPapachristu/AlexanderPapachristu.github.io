@@ -64,3 +64,18 @@ const audio = document.getElementById('audioSource');
             const currentCaption = captions.find(cap => currentTime >= cap.start && currentTime <= cap.end);
             captionBox.textContent = currentCaption ? currentCaption.text : '';
           };
+
+toggle.addEventListener('click', toggleComments);
+toggle.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    toggleComments();
+  }
+});
+
+function toggleComments() {
+  const wrapper = document.querySelector('.comment-wrapper');
+  const isVisible = wrapper.style.display === 'block';
+  wrapper.style.display = isVisible ? 'none' : 'block';
+  toggle.setAttribute('aria-pressed', !isVisible);
+}
